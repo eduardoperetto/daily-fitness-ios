@@ -15,8 +15,6 @@
 		C4A8FBD4299FA6A40066E7DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4A8FBD3299FA6A40066E7DD /* Assets.xcassets */; };
 		C4A8FBD7299FA6A40066E7DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4A8FBD5299FA6A40066E7DD /* LaunchScreen.storyboard */; };
 		C4A8FBE2299FA6A40066E7DD /* Daily_FitnessTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A8FBE1299FA6A40066E7DD /* Daily_FitnessTests.swift */; };
-		C4A8FBEC299FA6A40066E7DD /* Daily_FitnessUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A8FBEB299FA6A40066E7DD /* Daily_FitnessUITests.swift */; };
-		C4A8FBEE299FA6A40066E7DD /* Daily_FitnessUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A8FBED299FA6A40066E7DD /* Daily_FitnessUITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,8 +47,6 @@
 		C4A8FBDD299FA6A40066E7DD /* Daily FitnessTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Daily FitnessTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4A8FBE1299FA6A40066E7DD /* Daily_FitnessTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Daily_FitnessTests.swift; sourceTree = "<group>"; };
 		C4A8FBE7299FA6A40066E7DD /* Daily FitnessUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Daily FitnessUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C4A8FBEB299FA6A40066E7DD /* Daily_FitnessUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Daily_FitnessUITests.swift; sourceTree = "<group>"; };
-		C4A8FBED299FA6A40066E7DD /* Daily_FitnessUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Daily_FitnessUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,7 +79,6 @@
 			children = (
 				C4A8FBC6299FA6A30066E7DD /* Daily Fitness */,
 				C4A8FBE0299FA6A40066E7DD /* Daily FitnessTests */,
-				C4A8FBEA299FA6A40066E7DD /* Daily FitnessUITests */,
 				C4A8FBC5299FA6A30066E7DD /* Products */,
 			);
 			sourceTree = "<group>";
@@ -119,15 +114,6 @@
 				C4A8FBE1299FA6A40066E7DD /* Daily_FitnessTests.swift */,
 			);
 			path = "Daily FitnessTests";
-			sourceTree = "<group>";
-		};
-		C4A8FBEA299FA6A40066E7DD /* Daily FitnessUITests */ = {
-			isa = PBXGroup;
-			children = (
-				C4A8FBEB299FA6A40066E7DD /* Daily_FitnessUITests.swift */,
-				C4A8FBED299FA6A40066E7DD /* Daily_FitnessUITestsLaunchTests.swift */,
-			);
-			path = "Daily FitnessUITests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -280,8 +266,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C4A8FBEC299FA6A40066E7DD /* Daily_FitnessUITests.swift in Sources */,
-				C4A8FBEE299FA6A40066E7DD /* Daily_FitnessUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -444,11 +428,13 @@
 				DEVELOPMENT_TEAM = 97M2QV2N7N;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Daily Fitness/Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -472,11 +458,13 @@
 				DEVELOPMENT_TEAM = 97M2QV2N7N;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Daily Fitness/Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
