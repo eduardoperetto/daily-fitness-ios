@@ -7,9 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C420B97D29A0149E00F00AD2 /* LogsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C420B97C29A0149E00F00AD2 /* LogsViewModel.swift */; };
+		C420B97F29A014AE00F00AD2 /* LogsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C420B97E29A014AE00F00AD2 /* LogsViewController.swift */; };
+		C420B98229A014C400F00AD2 /* LogsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C420B98129A014C400F00AD2 /* LogsView.swift */; };
+		C420B98529A54FF900F00AD2 /* MealCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C420B98429A54FF900F00AD2 /* MealCell.swift */; };
+		C420B98829A5561D00F00AD2 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C420B98729A5561D00F00AD2 /* HomeView.swift */; };
+		C420B98A29A5562700F00AD2 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C420B98929A5562700F00AD2 /* HomeViewController.swift */; };
 		C4A8FBC8299FA6A30066E7DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A8FBC7299FA6A30066E7DD /* AppDelegate.swift */; };
 		C4A8FBCA299FA6A30066E7DD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A8FBC9299FA6A30066E7DD /* SceneDelegate.swift */; };
-		C4A8FBCC299FA6A30066E7DD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A8FBCB299FA6A30066E7DD /* ViewController.swift */; };
 		C4A8FBCF299FA6A30066E7DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4A8FBCD299FA6A30066E7DD /* Main.storyboard */; };
 		C4A8FBD2299FA6A30066E7DD /* Daily_Fitness.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C4A8FBD0299FA6A30066E7DD /* Daily_Fitness.xcdatamodeld */; };
 		C4A8FBD4299FA6A40066E7DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4A8FBD3299FA6A40066E7DD /* Assets.xcassets */; };
@@ -35,10 +40,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C420B97C29A0149E00F00AD2 /* LogsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogsViewModel.swift; sourceTree = "<group>"; };
+		C420B97E29A014AE00F00AD2 /* LogsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogsViewController.swift; sourceTree = "<group>"; };
+		C420B98129A014C400F00AD2 /* LogsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogsView.swift; sourceTree = "<group>"; };
+		C420B98429A54FF900F00AD2 /* MealCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealCell.swift; sourceTree = "<group>"; };
+		C420B98729A5561D00F00AD2 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		C420B98929A5562700F00AD2 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		C4A8FBC4299FA6A30066E7DD /* Daily Fitness.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Daily Fitness.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4A8FBC7299FA6A30066E7DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C4A8FBC9299FA6A30066E7DD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C4A8FBCB299FA6A30066E7DD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C4A8FBCE299FA6A30066E7DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C4A8FBD1299FA6A30066E7DD /* Daily_Fitness.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Daily_Fitness.xcdatamodel; sourceTree = "<group>"; };
 		C4A8FBD3299FA6A40066E7DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -74,6 +84,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C420B97929A0146000F00AD2 /* AppConfig */ = {
+			isa = PBXGroup;
+			children = (
+				C4A8FBC7299FA6A30066E7DD /* AppDelegate.swift */,
+				C4A8FBC9299FA6A30066E7DD /* SceneDelegate.swift */,
+			);
+			path = AppConfig;
+			sourceTree = "<group>";
+		};
+		C420B97B29A0148A00F00AD2 /* Log */ = {
+			isa = PBXGroup;
+			children = (
+				C420B98329A54FE000F00AD2 /* Views */,
+				C420B97C29A0149E00F00AD2 /* LogsViewModel.swift */,
+				C420B97E29A014AE00F00AD2 /* LogsViewController.swift */,
+			);
+			path = Log;
+			sourceTree = "<group>";
+		};
+		C420B98329A54FE000F00AD2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C420B98129A014C400F00AD2 /* LogsView.swift */,
+				C420B98429A54FF900F00AD2 /* MealCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C420B98629A5560D00F00AD2 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				C420B98729A5561D00F00AD2 /* HomeView.swift */,
+				C420B98929A5562700F00AD2 /* HomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
 		C4A8FBBB299FA6A30066E7DD = {
 			isa = PBXGroup;
 			children = (
@@ -96,9 +143,9 @@
 		C4A8FBC6299FA6A30066E7DD /* Daily Fitness */ = {
 			isa = PBXGroup;
 			children = (
-				C4A8FBC7299FA6A30066E7DD /* AppDelegate.swift */,
-				C4A8FBC9299FA6A30066E7DD /* SceneDelegate.swift */,
-				C4A8FBCB299FA6A30066E7DD /* ViewController.swift */,
+				C420B98629A5560D00F00AD2 /* Home */,
+				C420B97B29A0148A00F00AD2 /* Log */,
+				C420B97929A0146000F00AD2 /* AppConfig */,
 				C4A8FBCD299FA6A30066E7DD /* Main.storyboard */,
 				C4A8FBD3299FA6A40066E7DD /* Assets.xcassets */,
 				C4A8FBD5299FA6A40066E7DD /* LaunchScreen.storyboard */,
@@ -248,9 +295,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				C4A8FBD2299FA6A30066E7DD /* Daily_Fitness.xcdatamodeld in Sources */,
-				C4A8FBCC299FA6A30066E7DD /* ViewController.swift in Sources */,
+				C420B98229A014C400F00AD2 /* LogsView.swift in Sources */,
 				C4A8FBC8299FA6A30066E7DD /* AppDelegate.swift in Sources */,
+				C420B98529A54FF900F00AD2 /* MealCell.swift in Sources */,
+				C420B97D29A0149E00F00AD2 /* LogsViewModel.swift in Sources */,
+				C420B98A29A5562700F00AD2 /* HomeViewController.swift in Sources */,
+				C420B98829A5561D00F00AD2 /* HomeView.swift in Sources */,
 				C4A8FBCA299FA6A30066E7DD /* SceneDelegate.swift in Sources */,
+				C420B97F29A014AE00F00AD2 /* LogsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -354,7 +406,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -408,7 +460,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -430,7 +482,7 @@
 				INFOPLIST_FILE = "Daily Fitness/Info.plist";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -460,7 +512,7 @@
 				INFOPLIST_FILE = "Daily Fitness/Info.plist";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
