@@ -71,6 +71,7 @@ final class HomeView: UIView {
 
         logsButton.addTarget(self, action: #selector(onLogsButtonTap), for: .touchDown)
         addSubview(logsButton)
+
         registerMealButton.addTarget(self, action: #selector(onRegisterMealButtonTap), for: .touchDown)
         addSubview(registerMealButton)
 
@@ -79,6 +80,8 @@ final class HomeView: UIView {
 
     private func configureConstraints() {
         let screenWidth: CGFloat = 260
+        let buttonHeight: CGFloat = 75
+
         NSLayoutConstraint.activate([
             // Title label
             titleLabel.centerXAnchor.constraint(equalTo: centerXAnchor),
@@ -88,13 +91,13 @@ final class HomeView: UIView {
             logsButton.centerXAnchor.constraint(equalTo: centerXAnchor),
             logsButton.centerYAnchor.constraint(equalTo: centerYAnchor, constant: -20),
             logsButton.widthAnchor.constraint(equalToConstant: screenWidth),
-            logsButton.heightAnchor.constraint(equalToConstant: 75),
+            logsButton.heightAnchor.constraint(equalToConstant: buttonHeight),
 
             // Register button
             registerMealButton.centerXAnchor.constraint(equalTo: centerXAnchor),
             registerMealButton.centerYAnchor.constraint(equalTo: logsButton.centerYAnchor, constant: 100),
             registerMealButton.widthAnchor.constraint(equalToConstant: screenWidth),
-            registerMealButton.heightAnchor.constraint(equalToConstant: 75)
+            registerMealButton.heightAnchor.constraint(equalToConstant: buttonHeight)
         ])
     }
 

@@ -8,10 +8,21 @@
 import UIKit
 
 final class LogsViewController: UIViewController {
+    // MARK: - Temporary mock
+
+    private static let mealsMock: [Meal] = [
+        .init(title: "Meal1", description: "Description1", imageName: "image1"),
+        .init(title: "Meal2", description: "Description2", imageName: "image2"),
+    ]
+
     // MARK: - Properties
 
+    private let meals: [Meal] = LogsViewController.mealsMock
     private let viewModel: LogsViewModel
-    private lazy var rootView = LogsView()
+    private lazy var rootView = LogsView(
+        meals: meals,
+        presentDetail: { [weak self] in self?.presentDetail(of: $0) }
+    )
 
     // MARK: - Init
 
@@ -39,5 +50,11 @@ final class LogsViewController: UIViewController {
         title = "Meals log"
         navigationController?.navigationBar.prefersLargeTitles = true
         navigationController?.navigationBar.backgroundColor = .white
+    }
+
+    private func presentDetail(of meal: Meal) {
+        let detailController = DetailViewController(meal: meal)
+
+        present(detailController, animated: true)
     }
 }

@@ -12,7 +12,7 @@ final class HomeViewController: UIViewController {
 
     private lazy var rootView = HomeView(
         didTapLogs: { [weak self] in self?.openLogs() },
-        didTapRegisterMeal: { print("2") }
+        didTapRegisterMeal: { [weak self] in self?.openRegister() }
     )
 
     // MARK: - Init
@@ -43,5 +43,10 @@ final class HomeViewController: UIViewController {
     private func openLogs() {
         let logsController = LogsViewController(viewModel: LogsViewModel())
         show(logsController, sender: self)
+    }
+
+    private func openRegister() {
+        let registerController = RegisterFlowController()
+        show(registerController, sender: self)
     }
 }

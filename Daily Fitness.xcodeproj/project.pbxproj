@@ -13,6 +13,14 @@
 		C420B98529A54FF900F00AD2 /* MealCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C420B98429A54FF900F00AD2 /* MealCell.swift */; };
 		C420B98829A5561D00F00AD2 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C420B98729A5561D00F00AD2 /* HomeView.swift */; };
 		C420B98A29A5562700F00AD2 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C420B98929A5562700F00AD2 /* HomeViewController.swift */; };
+		C420B98D29A5865500F00AD2 /* RegisterFlowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C420B98C29A5865500F00AD2 /* RegisterFlowController.swift */; };
+		C420B99029A5943000F00AD2 /* SaveFormsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C420B98F29A5943000F00AD2 /* SaveFormsViewController.swift */; };
+		C420B99229A5945800F00AD2 /* SaveFormsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C420B99129A5945800F00AD2 /* SaveFormsView.swift */; };
+		C420B99529A6510900F00AD2 /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = C420B99429A6510900F00AD2 /* Meal.swift */; };
+		C420B99829A651F900F00AD2 /* SuccessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C420B99729A651F900F00AD2 /* SuccessView.swift */; };
+		C420B99A29A6520400F00AD2 /* SuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C420B99929A6520400F00AD2 /* SuccessViewController.swift */; };
+		C420B99E29A653FD00F00AD2 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C420B99D29A653FD00F00AD2 /* DetailView.swift */; };
+		C420B9A029A6540900F00AD2 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C420B99F29A6540900F00AD2 /* DetailViewController.swift */; };
 		C4A8FBC8299FA6A30066E7DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A8FBC7299FA6A30066E7DD /* AppDelegate.swift */; };
 		C4A8FBCA299FA6A30066E7DD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A8FBC9299FA6A30066E7DD /* SceneDelegate.swift */; };
 		C4A8FBCF299FA6A30066E7DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4A8FBCD299FA6A30066E7DD /* Main.storyboard */; };
@@ -46,6 +54,14 @@
 		C420B98429A54FF900F00AD2 /* MealCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealCell.swift; sourceTree = "<group>"; };
 		C420B98729A5561D00F00AD2 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		C420B98929A5562700F00AD2 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		C420B98C29A5865500F00AD2 /* RegisterFlowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterFlowController.swift; sourceTree = "<group>"; };
+		C420B98F29A5943000F00AD2 /* SaveFormsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveFormsViewController.swift; sourceTree = "<group>"; };
+		C420B99129A5945800F00AD2 /* SaveFormsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveFormsView.swift; sourceTree = "<group>"; };
+		C420B99429A6510900F00AD2 /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
+		C420B99729A651F900F00AD2 /* SuccessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessView.swift; sourceTree = "<group>"; };
+		C420B99929A6520400F00AD2 /* SuccessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessViewController.swift; sourceTree = "<group>"; };
+		C420B99D29A653FD00F00AD2 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		C420B99F29A6540900F00AD2 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		C4A8FBC4299FA6A30066E7DD /* Daily Fitness.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Daily Fitness.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4A8FBC7299FA6A30066E7DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C4A8FBC9299FA6A30066E7DD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -93,14 +109,12 @@
 			path = AppConfig;
 			sourceTree = "<group>";
 		};
-		C420B97B29A0148A00F00AD2 /* Log */ = {
+		C420B97B29A0148A00F00AD2 /* Logs */ = {
 			isa = PBXGroup;
 			children = (
-				C420B98329A54FE000F00AD2 /* Views */,
-				C420B97C29A0149E00F00AD2 /* LogsViewModel.swift */,
-				C420B97E29A014AE00F00AD2 /* LogsViewController.swift */,
+				C420B99B29A653D800F00AD2 /* List */,
 			);
-			path = Log;
+			path = Logs;
 			sourceTree = "<group>";
 		};
 		C420B98329A54FE000F00AD2 /* Views */ = {
@@ -119,6 +133,62 @@
 				C420B98929A5562700F00AD2 /* HomeViewController.swift */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		C420B98B29A5861C00F00AD2 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				C420B99629A651E700F00AD2 /* Success */,
+				C420B98E29A5939A00F00AD2 /* SaveForms */,
+				C420B98C29A5865500F00AD2 /* RegisterFlowController.swift */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		C420B98E29A5939A00F00AD2 /* SaveForms */ = {
+			isa = PBXGroup;
+			children = (
+				C420B98F29A5943000F00AD2 /* SaveFormsViewController.swift */,
+				C420B99129A5945800F00AD2 /* SaveFormsView.swift */,
+			);
+			path = SaveForms;
+			sourceTree = "<group>";
+		};
+		C420B99329A650FE00F00AD2 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				C420B99429A6510900F00AD2 /* Meal.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		C420B99629A651E700F00AD2 /* Success */ = {
+			isa = PBXGroup;
+			children = (
+				C420B99729A651F900F00AD2 /* SuccessView.swift */,
+				C420B99929A6520400F00AD2 /* SuccessViewController.swift */,
+			);
+			path = Success;
+			sourceTree = "<group>";
+		};
+		C420B99B29A653D800F00AD2 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				C420B99C29A653E600F00AD2 /* Detail */,
+				C420B98329A54FE000F00AD2 /* Views */,
+				C420B97C29A0149E00F00AD2 /* LogsViewModel.swift */,
+				C420B97E29A014AE00F00AD2 /* LogsViewController.swift */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		C420B99C29A653E600F00AD2 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				C420B99D29A653FD00F00AD2 /* DetailView.swift */,
+				C420B99F29A6540900F00AD2 /* DetailViewController.swift */,
+			);
+			path = Detail;
 			sourceTree = "<group>";
 		};
 		C4A8FBBB299FA6A30066E7DD = {
@@ -143,8 +213,10 @@
 		C4A8FBC6299FA6A30066E7DD /* Daily Fitness */ = {
 			isa = PBXGroup;
 			children = (
+				C420B99329A650FE00F00AD2 /* Data */,
+				C420B98B29A5861C00F00AD2 /* Register */,
 				C420B98629A5560D00F00AD2 /* Home */,
-				C420B97B29A0148A00F00AD2 /* Log */,
+				C420B97B29A0148A00F00AD2 /* Logs */,
 				C420B97929A0146000F00AD2 /* AppConfig */,
 				C4A8FBCD299FA6A30066E7DD /* Main.storyboard */,
 				C4A8FBD3299FA6A40066E7DD /* Assets.xcassets */,
@@ -294,15 +366,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C420B98D29A5865500F00AD2 /* RegisterFlowController.swift in Sources */,
+				C420B9A029A6540900F00AD2 /* DetailViewController.swift in Sources */,
 				C4A8FBD2299FA6A30066E7DD /* Daily_Fitness.xcdatamodeld in Sources */,
+				C420B99529A6510900F00AD2 /* Meal.swift in Sources */,
 				C420B98229A014C400F00AD2 /* LogsView.swift in Sources */,
 				C4A8FBC8299FA6A30066E7DD /* AppDelegate.swift in Sources */,
 				C420B98529A54FF900F00AD2 /* MealCell.swift in Sources */,
+				C420B99829A651F900F00AD2 /* SuccessView.swift in Sources */,
 				C420B97D29A0149E00F00AD2 /* LogsViewModel.swift in Sources */,
 				C420B98A29A5562700F00AD2 /* HomeViewController.swift in Sources */,
+				C420B99E29A653FD00F00AD2 /* DetailView.swift in Sources */,
+				C420B99029A5943000F00AD2 /* SaveFormsViewController.swift in Sources */,
 				C420B98829A5561D00F00AD2 /* HomeView.swift in Sources */,
 				C4A8FBCA299FA6A30066E7DD /* SceneDelegate.swift in Sources */,
 				C420B97F29A014AE00F00AD2 /* LogsViewController.swift in Sources */,
+				C420B99A29A6520400F00AD2 /* SuccessViewController.swift in Sources */,
+				C420B99229A5945800F00AD2 /* SaveFormsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
