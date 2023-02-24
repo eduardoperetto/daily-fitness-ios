@@ -32,9 +32,12 @@ final class DetailView: UIView {
         return label
     }()
 
-    private lazy var imageView: UIImageView = {
-        let image = UIImage(named: meal.imageName)
-        return UIImageView(image: image)
+    private let imageView: UIImageView = {
+        let image = UIImage(systemName: "photo.fill")?
+            .withTintColor(.black, renderingMode: .alwaysOriginal)
+        let imageView = UIImageView(image: image)
+        imageView.translatesAutoresizingMaskIntoConstraints = false
+        return imageView
     }()
 
     // MARK: - Init
@@ -55,7 +58,7 @@ final class DetailView: UIView {
     private func setupViews() {
         addSubview(titleLabel)
         addSubview(descriptionLabel)
-//        addSubview(imageView)
+        addSubview(imageView)
 
         backgroundColor = .white
 
@@ -64,6 +67,7 @@ final class DetailView: UIView {
 
     private func configureConstraints() {
         let margin: CGFloat = 20
+        let imageSize: CGFloat = 320
 
         NSLayoutConstraint.activate([
             // Title
@@ -74,10 +78,11 @@ final class DetailView: UIView {
             descriptionLabel.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 12),
             descriptionLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: margin),
 
-            // Image
-//            imageView.topAnchor.constraint(equalTo: descriptionLabel.bottomAnchor, constant: 100),
-//            imageView.widthAnchor.constraint(equalToConstant: 100),
-//            imageView.heightAnchor.constraint(equalToConstant: 100)
+            // Image view
+            imageView.centerXAnchor.constraint(equalTo: centerXAnchor),
+            imageView.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -100),
+            imageView.widthAnchor.constraint(equalToConstant: imageSize),
+            imageView.heightAnchor.constraint(equalToConstant: imageSize*1.5),
         ])
     }
 }

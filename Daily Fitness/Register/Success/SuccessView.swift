@@ -25,7 +25,7 @@ final class SuccessView: UIView {
     private let successLabel: UILabel = {
         let label = UILabel()
         label.text = "Meal saved succesfully"
-        label.font = .systemFont(ofSize: 24)
+        label.font = .systemFont(ofSize: 28)
         label.textColor = .black
         label.textAlignment = .center
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -69,7 +69,7 @@ final class SuccessView: UIView {
     }
 
     private func configureConstraints() {
-        let screenWidth: CGFloat = 260
+        let screenWidth: CGFloat = 320
         let buttonHeight: CGFloat = 70
 
         NSLayoutConstraint.activate([
@@ -81,13 +81,13 @@ final class SuccessView: UIView {
 
             // Logs button
             successLabel.centerXAnchor.constraint(equalTo: centerXAnchor),
-            successLabel.centerYAnchor.constraint(equalTo: iconView.bottomAnchor, constant: 100),
+            successLabel.topAnchor.constraint(equalTo: iconView.bottomAnchor, constant: 100),
             successLabel.widthAnchor.constraint(equalToConstant: screenWidth),
             successLabel.heightAnchor.constraint(equalToConstant: buttonHeight),
 
             // Register button
             returnButton.centerXAnchor.constraint(equalTo: centerXAnchor),
-            returnButton.centerYAnchor.constraint(equalTo: bottomAnchor, constant: -150),
+            returnButton.centerYAnchor.constraint(equalTo: bottomAnchor, constant: -100),
             returnButton.widthAnchor.constraint(equalToConstant: screenWidth),
             returnButton.heightAnchor.constraint(equalToConstant: buttonHeight)
         ])

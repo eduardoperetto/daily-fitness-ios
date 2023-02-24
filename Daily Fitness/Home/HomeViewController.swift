@@ -46,7 +46,8 @@ final class HomeViewController: UIViewController {
     }
 
     private func openRegister() {
-        let registerController = RegisterFlowController()
+//        let registerController = RegisterFlowController()
+        let registerController = SaveFormsViewController()
         show(registerController, sender: self)
     }
 }
